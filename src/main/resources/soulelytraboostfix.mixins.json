@@ -3,6 +3,6 @@
   "minVersion": "0.8",
   "package": "com.example.soulelytraboostfix.mixin",
   "compatibilityLevel": "JAVA_21",
-  "mixins": ["SoulElytraBoostPayloadMixin"],
+  "mixins": ["SoulElytraBoostPayloadMixin", "DeeperDarkerPluginMixin"],
   "injectors": { "defaultRequire": 1 }
 }
