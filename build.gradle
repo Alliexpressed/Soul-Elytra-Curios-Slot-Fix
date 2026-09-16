@@ -57,6 +57,11 @@ dependencies {
     // "required": false means this mod simply does nothing if Deeper and Darker (or Elytra
     // Slot) isn't installed.
     compileOnly files("libs/${deeperdarker_jar_name}")
+
+    // Elytra Slot: compileOnly, purely so the Mixin annotation processor can resolve and
+    // validate the string-targeted mixin above at compile time. No code here references
+    // Elytra Slot's classes directly, and this is never bundled or required at runtime.
+    compileOnly files("libs/${elytraslot_jar_name}")
 }
 
 // Expand gradle.properties values into neoforge.mods.toml
